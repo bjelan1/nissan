@@ -1,0 +1,617 @@
+*{
+	margin:0px;
+	padding:0px;
+}
+@font-face{
+	src:url("../font/Nunito-Regular.ttf");
+	font-family:"Nunito";
+}
+body{
+	font-family:"Verdana";
+}
+.cistac{
+	clear:both;
+}
+a{
+	text-decoration:none;
+}
+ul{
+	list-style-type:none;
+}
+header{
+	width:90%;
+	margin:0px auto;
+}
+.centriranje{
+	width:90%;
+	margin:0px auto;
+}
+#navigacija ul li a,.naslov,.detalj p,#ponuda h3,#ponuda h4,.model-tekst-desno h2,.model-tekst-levo h2,#autor-sadrzaj h2,.cover-sadrzaj h1,.otkrijte-tekst p,#ponuda-sadrzaj h3,#video-sadrzaj h2{
+	font-family:"Nunito";
+}
+#logo{
+	float:left;
+	width:20%;
+}
+#logo img{
+	width:170px;
+}
+#navigacija{
+	float:right;
+	font-size:20px;
+	width:60%;
+}
+#navigacija ul{
+	text-align:right;
+	margin-top:40px;
+}
+#navigacija ul li{
+	display:inline;
+	margin:10px;
+}
+#navigacija ul li:last-child{
+	margin-right:0px;
+}
+#navigacija ul li a{
+	text-transform:uppercase;
+	color:#000;
+}
+#navigacija ul li a:hover{
+	color:#adadad;
+	text-decoration:underline;
+}
+#cover-slika{
+	width:100%;
+	background-image:url("../slike/nissan.jpg");
+	height:750px;
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+.cover-sadrzaj{
+	width:35%;
+	float:left;
+}
+.cover-sadrzaj h1{
+	font-size:50px;
+	margin-top:100px;
+	margin-left:23px;
+	text-transform:uppercase;
+	z-index: 2;
+    position: absolute;
+    color: #fff;
+    top: 15%;
+    left: 17%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+    height: 60px;
+    animation-name: naslov;
+    animation-duration: 3s;
+    animation-direction: alternate;
+	opacity:0.9;
+	font-weight:bold;
+}
+#galerija-cover-slika h1{
+	color: #444859;
+}
+@keyframes naslov{
+0% {
+    transform: translate(-400%,-50%);
+}
+50% {
+    transform: translate(-50%, -50%);
+    border-bottom: 0px;
+    padding-bottom: 10px;
+}
+100% {
+    padding-bottom: 30px;
+}
+}
+.naslov{
+	text-transform:uppercase;
+	text-align:center;
+	padding:40px 0px 0px 0px;
+	font-size:30px;
+	animation: boja 2s infinite alternate;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-fill-mode: none;
+    animation-play-state: running;
+    animation-name: boja;
+	letter-spacing:5px;
+}
+@keyframes boja{
+25% {
+    color: #8da0eb;
+}
+100% {
+    color: #444859;
+}}
+.naslov h2{
+	text-decoration:underline;
+}
+.usluge,.usluge1,.usluge2,.usluge3,.usluge4,.usluge5{
+	width:32%;
+	float:left;
+	background-repeat:no-repeat;
+	background-size:cover;
+	height:250px;
+	margin-top:80px;
+}
+.usluge{
+	background-image:url("../slike/centriranje.jpg");
+}
+.usluge4{
+	background-image:url("../slike/registracija.jpg");
+}
+.usluge1{
+	background-image:url("../slike/karoserija.jpg");
+}
+.usluge2{
+	background-image:url("../slike/servis.jpg");
+}
+.usluge3{
+	background-image:url("../slike/tehnicki.jpg");
+}
+.usluge5{
+	background-image:url("../slike/sasija.jpg");
+}
+.margin-left-right-2,.kolona,.kolona1{
+	margin-left:2%;
+	margin-right:2%;
+}
+.usluge-tekst p{
+	text-align:left;
+	color:#fff;
+	font-size:20px;
+	margin-top:207px;
+	background-color:#252525;
+	padding:10px;
+	opacity:0.9;
+}
+.detalj{
+	width:100%;
+	height:50px;
+	float:left;
+	text-transform:uppercase;
+	color:#000;
+	border:1px solid #d6d4d4;
+	border-top:none;
+}
+.detalj:hover{
+	box-shadow:2px 2px 2px #252525;
+}
+.detalj p{
+	padding:15px;
+}
+.detalj p:hover{
+	font-size:120%;
+	font-weight:bold;
+	color:#252525;
+}
+.centriranje1{
+	width:90%;
+	margin:100px auto;
+}
+#glavni{
+  position: relative;
+  margin:100px auto;
+  width:90%;
+}
+#ponuda{
+	position: relative;
+	height: 550px;
+	margin: 30px auto;
+	width:70%;
+	background-image:url("../slike/kaskai.jpg");
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+#ponuda h3{
+	text-align:center;
+	color:#adadad;
+	font-size:40px;
+	padding:5px;
+}
+#ponuda h4{
+	text-align:center;
+	color:#adadad;
+	font-size:30px;
+	text-transform:uppercase;
+	padding:5px;
+	text-decoration:underline;
+}
+#ponuda p{
+	text-align:center;
+	color:#adadad;
+	font-size:10px;
+}
+#ponuda-sadrzaj{
+  position: absolute;
+  background: #444859;
+  width: 30%;
+  left: 0px;
+  top: 60px;
+  height: 430px;
+}
+#ponuda-sadrzaj h3{
+	text-align:left;
+	margin-left:30px;
+	margin-top:60px;
+	font-size:27px;
+	text-transform:uppercase;
+	color:#fff;
+}
+#ponuda-sadrzaj p{
+	text-align:left;
+	margin-left:30px;
+	margin-top:40px;
+	font-size:15px;
+	color:#fff;
+}
+#saznaj{
+	width:80%;
+	float:left;
+	margin-left:25px;
+}
+#saznaj a p{
+	text-transform:uppercase;
+	color:#fff;
+	background-color:#8da0eb;
+	text-align:center;
+	padding:20px;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    transition-property: all;
+}
+#saznaj a p:hover{
+	background-color:#4d6deb;
+}
+#video-juke{
+	width:50%;
+	float:left;
+	height:400px;
+}
+#video-sadrzaj{
+	width:50%;
+	float:right;
+	background-color:#8da0eb;
+	height:400px;
+}
+#video-sadrzaj h2{
+	text-align:center;
+	color:#fff;
+	font-size:35px;
+	padding:20px;
+}
+#video-sadrzaj p{
+	text-align:left;
+	color:#fff;
+	font-size:15px;
+	margin-left:30px;
+	line-height:23px;
+}
+.centriranje2{
+	width:100%;
+	margin:100px auto;
+}
+footer{
+	width:100%;
+	background-color:#252525;
+	float:left;
+	margin:0px auto;
+	color:#fff;
+	text-align:center;
+}
+footer p,#kontakt-futer p{
+	padding:20px;
+	font-size:25px;
+	color:#8da0eb;
+}
+#mreze ul li{
+	display:inline;
+	margin:10px;
+}
+#mreze,#kontakt-futer{
+	float:left;
+	width:30%;
+	margin-left:530px;
+	border-bottom:2px solid #fff;
+}
+#mreze ul li a{
+	font-size:35px;
+	color:#fff;
+}
+#mreze ul li a:hover,#kontakt-futer ul li a:hover{
+	color:#8da0eb;
+}
+#kontakt-futer ul li{
+	margin-top:10px;
+}
+#kontakt-futer ul li a{
+	font-size:20px;
+	color:#fff;
+}
+#dole{
+	float:left;
+	width:100%;
+	background-color:#000;
+	margin-top:10px;
+}
+#dole p{
+	font-size:15px;
+}
+#modeli-cover-slika{
+	width:100%;
+	background-image:url("../slike/modeli.jpg");
+	height:450px;
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position:bottom;
+}
+.slika-model-levo,.slika-model-desno{
+	height:450px;
+	width:47%;
+	margin-top:100px;
+}
+.slika-model-desno{
+	margin-right:80px;
+	float:right;
+}
+.slika-model-levo{
+	margin-left:80px;
+	float:left;
+}
+.model-tekst-desno{
+	float:right;
+	width:40%;
+	height:450px;
+	margin-top:100px;
+	margin-right:80px;
+}
+.model-tekst-levo{
+	float:left;
+	width:40%;
+	height:450px;
+	margin-top:100px;
+	margin-left:80px;
+}
+.model-tekst-desno h2,.model-tekst-levo h2{
+	font-size:35px;
+	color:#444859;
+	text-transform:uppercase;
+	margin-top:80px;
+}
+.model-tekst-levo h3,.model-tekst-desno h3{
+	font-size:15px;
+	color:#8da0eb;
+	text-transform:uppercase;
+	margin-top:20px;
+}
+.model-tekst-desno p,.model-tekst-levo p{
+	font-size:15px;
+	margin-top:30px;
+	line-height:20px;
+}
+.model-tekst-desno a p,.model-tekst-levo a p{
+	font-size:15px;
+	margin-top:30px;
+	color:#8da0eb;
+}
+.model-tekst-levo a p:hover,.model-tekst-desno a p:hover{
+	font-size:110%;
+	font-weight:bold;
+}
+#galerija-cover-slika{
+	width:100%;
+	background-image:url("../slike/galerija-cover.jpg");
+	height:450px;
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position:bottom;}
+.slika-levo{
+	float:left;
+	width:42%;
+	height:400px;
+	margin-top:80px;
+	margin-left:50px;
+	transition: transform 1s;	
+}
+.slika-desno{
+	float:right;
+	width:42%;
+	height:400px;
+	margin-top:80px;
+	margin-right:50px;	
+	transition: transform 1s;
+}
+.slika-desno:hover,.slika-levo:hover{
+	transform: scale(1.1);
+	box-shadow:5px 5px 5px 5px #505050;
+}
+#autor-cover-slika{
+	width:100%;
+	background-image:url("../slike/gtr-cover.jpg");
+	height:350px;
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position:bottom;
+}
+#autor-slika{
+	width:30%;
+	float:left;
+	height:500px;
+	margin-left:150px;	
+}
+#autor-slika img{
+	width:100%;
+	height: 100%;
+}
+#autor-sadrzaj{
+	width:40%;
+	float:right;
+	margin-right:100px;
+	height:400px;
+	text-align:center;
+	color:#00000;
+}
+#autor-sadrzaj h2{
+	padding:5px;
+	font-size:27px;
+	text-transform:uppercase;
+	border-bottom:1px solid #8da0eb;
+	margin-top:10px;
+}
+#autor-sadrzaj p{
+	font-size:20px;
+	margin-top:5px;
+}
+.centriranje3{
+	width:100%;
+	margin:100px auto;
+	background-image:url("../slike/nissan-firma.jpg");
+	height:650px;
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+#kontakt-cover-slika{
+	width:100%;
+	background-image:url("../slike/kontakt-cover.jpg");
+	height:350px;
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+#kontakt-blok{
+	width:30%;
+	height:550px;
+	float:left;
+	border:2px solid;
+	margin-left:100px;
+	background-color:#fff;
+	margin-top:40px;
+	border-radius:2%;
+	background-color:rgba(173, 173, 173, 0.8);
+}
+#kontakt-blok img{
+	border-radius:2%;
+}
+.kontakt-slika{
+	width:100%;
+	height:250px;
+	float:left;
+}
+#kontakt-blok h2{	
+	margin-top:280px;
+	text-transform:uppercase;
+	color:#444859;
+	margin-left:20px;
+}
+#kontakt-ikone{	
+	float:left;
+	width:7%;	
+	margin-top:30px;
+}
+#kontakt-ikone i{
+	margin-bottom:20px;
+	margin-left:20px;
+	color:#444859;
+	font-size:20px;
+}
+#tekst-kontakt{
+	float:right;
+	width:93%;
+	margin-top:30px;
+}
+#tekst-kontakt p{
+	color:#505050;
+	margin-bottom:21px;
+	margin-left:20px;
+	color:#444859;
+}
+#tekst-kontakt p:hover{
+	color:#4d6deb;
+}
+#kontakt-blok1{
+	width:40%;
+	float:right;
+	margin-right:100px;
+	margin-top:120px;
+	border-radius:2%;
+	background-color:rgba(173, 173, 173, 0.8);
+}
+#kontakt-blok1 h2{
+	margin-left:2%;
+	margin-top:2%;
+	text-transform:uppercase;
+	color:#444859;
+	margin-bottom:5%;
+}
+.red {
+    float: right;
+    width: 100%;
+    padding: 20px 0px;
+}
+.kolona,.kolona1{
+	width: 45%;
+    float: left;
+}
+form input[type=text], form input[type=date], form input[type = email],form input[type = tel]{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    outline: 1px solid #000;
+}
+form input[type=submit] {
+    background-color:#444859;
+    color: #fff;
+    border: none;
+    width: 35%;
+    height: 40px;
+    font-weight: bold;
+	box-sizing: border-box;
+	transition: 1s ease-out;
+    transition-duration: 1s;
+    transition-timing-function: ease-out;
+    transition-delay: 0s;
+    transition-property: all;
+}
+.red1{
+    display: flex;
+    justify-content: center;
+	float: right;
+    width: 100%;
+    padding: 20px 0px;
+}
+form input[type=submit]:hover{
+	background-color:#8da0eb;
+}
+form select{
+	 width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    outline: 1px solid #000;
+}
+.otkrijte{
+	float:left;
+	width:30%;
+	margin-left:2%;
+	text-align:center;
+	margin-top:50px;
+}
+.otkrijte-ikona i{
+	font-size:60px;
+	color:#444859;
+}
+.otkrijte-tekst p{
+	padding:20px;
+	font-weight:bold;
+	color:#505050;
+}
+.otkrijte:hover{
+	border-bottom:3px solid #8da0eb;
+}
